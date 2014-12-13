@@ -12,6 +12,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:textSize="26dp"
             android:id="@+id/AnimalName"
@@ -70,5 +71,6 @@
         android:id="@+id/AnimalImage"
         android:paddingTop="20dp"
         android:layout_gravity="center"
-        android:src="@drawable/cow"/>
+        android:src="@drawable/cow"
+        android:onClick="playSound"/>
 </LinearLayout>

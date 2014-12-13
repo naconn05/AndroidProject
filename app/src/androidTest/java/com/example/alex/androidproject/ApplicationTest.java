@@ -1,4 +1,4 @@
-package com.example.alex.inclass;
+package com.example.alex.androidproject;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

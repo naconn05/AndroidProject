@@ -1,4 +1,4 @@
-package com.example.alex.notoldmcdonaldsfarm;
+package com.example.alex.androidproject;
 
 import android.content.Context;
 import android.view.View;

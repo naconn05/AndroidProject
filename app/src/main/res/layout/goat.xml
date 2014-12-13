@@ -17,7 +17,7 @@
             android:id="@+id/AnimalName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Animal Name"
+            android:text="Goat"
             android:padding="5dp"
             />
     </LinearLayout>
@@ -38,7 +38,7 @@
             android:id="@+id/AnimalWeight"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Weight"
+            android:text="661 pounds"
             android:padding="5dp"/>
     </LinearLayout>
 
@@ -59,7 +59,7 @@
             android:id="@+id/AnimalLifespan"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Animal Lifespan"
+            android:text="18 years"
             android:padding="5dp"/>
     </LinearLayout>
 
@@ -70,5 +70,5 @@
         android:id="@+id/AnimalImage"
         android:paddingTop="20dp"
         android:layout_gravity="center"
-        android:src="@drawable/cow"/>
+        android:src="@drawable/goat"/>
 </LinearLayout>

@@ -12,13 +12,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+        <Button
             android:textSize="26dp"
             android:id="@+id/AnimalName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Horse"
             android:padding="5dp"
+            android:onClick="playPro"
             />
     </LinearLayout>
     <LinearLayout

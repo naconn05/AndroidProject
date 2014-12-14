@@ -12,13 +12,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
+        <Button
             android:textSize="26dp"
             android:id="@+id/AnimalName"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Goat"
             android:padding="5dp"
+            android:onClick="playPro"
             />
     </LinearLayout>
     <LinearLayout
@@ -63,7 +64,12 @@
             android:padding="5dp"/>
     </LinearLayout>
 
-
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch the Goat!"
+        android:layout_gravity="center"
+        android:textSize="30dp"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

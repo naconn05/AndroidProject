@@ -12,6 +12,7 @@ import android.view.View;
 public class Duck extends Activity {
     private SoundPool soundPool;
     private int soundID;
+    private int soundPro;
     boolean plays = false, loaded = false;
     float actVolume, maxVolume, volume;
     AudioManager audioManager;
@@ -37,6 +38,7 @@ public class Duck extends Activity {
             }
         });
         soundID = soundPool.load(this, R.raw.duck, 1);
+        soundPro = soundPool.load(this, R.raw.duck01, 1);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
@@ -44,6 +46,13 @@ public class Duck extends Activity {
         // Is the sound loaded does it already play?
         if (loaded) {
             soundPool.play(soundID, volume, volume, 1, 0, 1f);
+
+        }
+    }
+    public void playPro(View v) {
+        // Is the sound loaded does it already play?
+        if (loaded) {
+            soundPool.play(soundPro, volume, volume, 1, 0, 1f);
 
         }
     }

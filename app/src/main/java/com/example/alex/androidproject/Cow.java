@@ -1,12 +1,11 @@
 package com.example.alex.androidproject;
 
 import android.app.Activity;
-import android.os.Bundle;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.media.SoundPool.OnLoadCompleteListener;
+import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 /**
  * Created by Alex on 12/11/2014.
@@ -15,6 +14,7 @@ public class Cow extends Activity {
 
     private SoundPool soundPool;
     private int soundID;
+    private int soundPro;
     boolean plays = false, loaded = false;
     float actVolume, maxVolume, volume;
     AudioManager audioManager;
@@ -42,6 +42,7 @@ public class Cow extends Activity {
                 	            }
             	        });
         	        soundID = soundPool.load(this, R.raw.cow, 1);
+        soundPro = soundPool.load(this, R.raw.cow01,1);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
@@ -52,5 +53,11 @@ public class Cow extends Activity {
 
             	        }
         	    }
-}
+    public void playPro(View v) {
+        // Is the sound loaded does it already play?
+        if (loaded) {
+            soundPool.play(soundPro, volume, volume, 1, 0, 1f);
+
+        }
+}}
 

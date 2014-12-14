@@ -12,6 +12,7 @@ import android.view.View;
 public class Dog extends Activity {
     private SoundPool soundPool;
     private int soundID;
+    private int soundPro;
     boolean plays = false, loaded = false;
     float actVolume, maxVolume, volume;
     AudioManager audioManager;
@@ -36,6 +37,7 @@ public class Dog extends Activity {
             }
         });
         soundID = soundPool.load(this, R.raw.dog, 1);
+        soundPro = soundPool.load(this,R.raw.dog01, 1);
 
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -44,6 +46,13 @@ public class Dog extends Activity {
         // Is the sound loaded does it already play?
         if (loaded && !plays) {
             soundPool.play(soundID, volume, volume, 1, 0, 1f);
+
+        }
+    }
+    public void playPro(View v) {
+        // Is the sound loaded does it already play?
+        if (loaded) {
+            soundPool.play(soundPro, volume, volume, 1, 0, 1f);
 
         }
     }
